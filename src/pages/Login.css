@@ -1,0 +1,155 @@
+.AdminDiv {
+    align-items: center;
+    width: 100%;
+    padding-top: 40px;
+  }
+  
+  .AdminDivBody {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 30px 40px;
+    width: 92%;
+    position: fixed; /* make the heading stick at the top */
+    top: 0;
+  }
+  
+  .adminPageLogo {
+    padding: 10px 30px;
+  }
+  
+  .logo-image {
+    width: 8%;
+  }
+  
+  .companyText {
+    width: 90%;
+    padding: 0px 20px;
+  }
+  
+  .psychortexHead {
+    display: inline-block;
+    font-size: 3em;
+    color: rgb(116, 1, 116);
+  }
+  
+  .adminAuth-container {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    padding-top: 7rem;
+  }
+  
+  .adminLogin-form-container,
+  .adminRegister-form-container,
+  .adminForgetPassword-form-container {
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+  }
+  
+  .adminLogin-h1,
+  .adminRegister-h1,
+  .adminForgetPassword-h1 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+    color: rgb(116, 1, 116);
+    background-color: rgb(149, 193, 3);
+    padding: 10px;
+    border-radius: 3px;
+  }
+  
+  .adminLogin-input-group,
+  .adminRegister-input-group,
+  .adminForgetPassword-input-group {
+    margin-bottom: 15px;
+  }
+  
+  .adminLogin-label,
+  .adminRegister-label,
+  .adminForgetPassword-label {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(99, 99, 99);
+  }
+  
+  .adminRegister-form-container {
+    overflow-y: auto; /* enable vertical scrolling if content overflows */
+    height: 400px; /* set a fixed height for the form container */
+  }
+  
+  .adminLogin-input,
+  .adminRegister-input,
+  .adminForgetPassword-input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .adminLogin-error {
+    color: red;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .adminLogin-button,
+  .adminRegister-button,
+  .adminForgetPassword-button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(149, 193, 3);
+    color: rgb(116, 1, 116);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .adminLogin-button:disabled,
+  .adminRegister-button:disabled,
+  .adminForgetPassword-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .AdminLoginPageFooter {
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 20px 0px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #e7e7e7; /* Optional: adds a top border */
+  }
+  
+  .AdminLoginPageFooter-p {
+    margin: 0;
+    color: #6c757d; /* Dark grey text */
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* light background */
+    color: #000; /* black text */
+    position: fixed; /* stick to the bottom */
+    bottom: 0;
+    width: 100%; /* full width */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    font-size: 14px; /* adjust font size as needed */
+    box-sizing: border-box; /* include padding in the element's total width */
+  }
+  

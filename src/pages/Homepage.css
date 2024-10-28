@@ -1,0 +1,114 @@
+.slideBar-div {
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow-y: hidden;
+  }
+  
+  aside.bhushan {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* height: 100%; */
+    width: 200px; /* Adjust this if needed */
+    border-right: 1px solid rgb(207, 207, 207);
+    background-color: rgb(255, 255, 255);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .logoDiv {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Website-Logo {
+    padding-top: 10px;
+    width: 50%;
+  }
+  
+  .slideBar-list {
+    margin-top: 1.25rem;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .slideBar-link {
+    display: flex;
+    text-decoration: none;
+    color: rgb(116, 1, 116);
+    align-items: center;
+    /* gap: 0.75rem; */
+    padding: 0.875rem 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .slideBar-link:hover {
+    /* background-color: #f0f0f0; */
+  }
+  
+  .active-link {
+    color: black;
+    background-color: #f2f3ff;
+    border-right: 4px solid rgb(149, 193, 3);
+  }
+  
+  .uploadDoctor {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  
+  .uploadDoctorInput {
+    padding-left: 70px;
+    padding-top: 30px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .aside {
+    /* background-color: red; */
+    width: 400px;
+  }
+  
+  .content-area {
+    width: 100%;
+    gap: 100px;
+    display: flex;
+    flex-direction: column; /* Change to column for vertical stacking */
+    margin-left: 200px; /* Offset the fixed sidebar */
+    height: 100vh; /* Ensure it takes up the full viewport height */
+    width: calc(100vw - 200px); /* Adjust width based on sidebar */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px; /* Optional padding for aesthetics */
+  }
+
+  /* image logo */
+  .image-logo{
+   width: 70%;
+  }
+
+  .btnLogout{
+    background-color: rgb(116, 1, 116);
+    color: white;
+    margin: 0;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .btnLogout:hover{
+    background-color: rgb(149, 193, 3);
+   
+  }

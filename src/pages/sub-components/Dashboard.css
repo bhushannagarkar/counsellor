@@ -1,0 +1,329 @@
+.counsellor-dashboard-main {
+    margin: 0;
+    padding: 0;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    gap: 1rem; /* Adjust gap as needed */
+    padding-left: 3.5rem; /* Equivalent to sm:pl-14 */
+    /* padding-top: 1rem; Equivalent to sm:py-4 */
+    /* margin-left: 200px; */
+    width: 100%;
+  }
+  
+  .counsellor-dashboard-content {
+ /* background-color: red; */
+   display: flex;
+   flex-direction: column;
+  width: 100%;
+
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr); Equivalent to lg:grid-cols-2 */
+    /* gap: 1rem; Adjust gap as needed */
+    /* padding: 1rem; Equivalent to p-4 */
+  }
+  
+  .boxes{
+    /* padding: 50px; */
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: stretch;
+    
+  }
+  .adminProfile-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 2;
+    /* margin: 0; */
+  }
+  .counsellor-dashboard-cards {
+   
+    /* display: grid;
+    grid-template-columns: repeat(3, 2fr); /* sm:grid-cols-2 */
+    /* gap: 1rem; Adjust gap as needed */ 
+  }
+
+  .above-cards{
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .counsellor-dashboard-card {
+    /* background-color: green ; */
+    padding-bottom: 0.75rem; /* Equivalent to pb-3 */
+  }
+  .latest-appointment-tab{
+    width: 100%;
+    margin-top: 50px;
+    /* background-color: red; */
+  }
+  .all-appointments{
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(149,193,3);
+    color: white;
+    font-size: larger;
+    font-weight: 500 ;
+  }
+
+  .visit-portfolio{
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(116, 1, 116);
+    color: white;
+    font-size: larger;
+    font-weight: 600 ;
+  }
+  .counsellor-dashboard-card-footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .latest-appointments-heading{
+    color: rgb(116, 1, 116);
+  }
+  
+  .counsellor-dashboard-table {
+    /* background-color: rgb(149,193,3); */
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  .table-heading{
+       background-color: rgb(149,193,3);
+  }
+  
+  .counsellor-dashboard-table th,
+  .counsellor-dashboard-table td {
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  .counsellor-dashboard-table th {
+    font-weight: bold;
+  }
+  
+  .counsellor-dashboard-table-row {
+    background-color: var(--accent-bg-color); /* Use an accent color for the row */
+  }
+  
+  .counsellor-dashboard-table-empty {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .counsellor-dashboard-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem;
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-text-color);
+    border-radius: 0.25rem;
+  }
+  
+  .counsellor-dashboard-appointment-button {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .counsellor-dashboard-header {
+    /* color: rgb(116, 1, 116); */
+    font-size: 2rem; /* Adjust as needed */
+    /* color: var(--primary-text-color); */
+  }
+  .latest-appointments-heading{
+    color: rgb(116, 1, 116);
+    font-weight: bold;
+  }
+
+  .counsellor-dashboard-visit-button {
+    font-size: 0.875rem;
+    background-color: var(--visit-button-bg-color);
+    color: var(--visit-button-text-color);
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .counsellor-dashboard-detail-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .image-profile{
+    width: 300px;
+    /* background-color: red; */
+  }
+
+  /* above code  */
+  .adminProfile-container{
+
+    /* background-color: red; */
+    /* margin:20px 0px; */
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px;
+  }
+  
+  .CounsellorHeading{
+    text-align: center;
+    margin: 0px;
+    background-color: rgb(149, 193, 3);
+    color: rgb(116, 1, 116);
+    /* margin: 20px; */
+    padding: 20px;
+    font-size: 2em;
+    font-weight: 600;
+  }
+  
+  
+  .adminProfile-img {
+    width: 220px; 
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover; 
+    align-items: start;
+  }
+  
+  .adminProfile-name{
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(138, 0, 138);
+    margin: 0px;
+  }
+
+  .adminProfile-name-only{
+
+    font-size: 1.5rem;
+    /* font-weight: 600; */
+    /* color: rgb(138, 0, 138); */
+    /* color: white; */
+    margin: 0px;
+  }
+  
+  .IAmCounsellor{
+    width: 45%;
+    text-align: center;
+    padding: 0.3rem;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+  }
+
+  .latestAppointment {
+    padding: 2.5rem 44px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+  }
+  
+  .latestAppointments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .latestAppointments-table thead {
+    /* background-color:  rgba(114, 148, 2, 0.646); */
+    color: black;
+  }
+  
+  .latestAppointments-table th,
+  .latestAppointments-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .latestAppointment-h1 {
+    text-align: left;
+    color: rgb(116, 1, 116);
+    margin-bottom: 20px;
+  }
+  
+  .latestAppointment-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+  .latestAppointment-tbody{
+    padding-bottom: 10px;
+  }
+
+  .details-diagonisis-btn{
+    background-color: rgb(116, 1, 116);
+    color: white;
+  }
+
+  .bhushan{
+    display: flex;
+    /* float: col; */
+    /* background-color: green; */
+    flex-direction: column;
+    /* background-color: red; */
+  }
+
+  .flex-container {
+    /* height: 300px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* align-items: stretch; Ensures all items stretch to the container’s height */
+}
+
+.flex-item {
+  /* margin-left: 10px; */
+    flex-grow: 1;
+    /* background-color: lightblue; */
+    padding: 10px;
+}
+
+/* Increase height of Item 2 */
+.item2 {
+  margin-left: 10px;
+  height: 150px;
+  width: 100px;
+  /* height: 400px; */
+    /* flex-grow: 2; This item will take twice as much space */
+    /* background-color: lightcoral; */
+}
+.item1 {
+  
+  margin-left: 10px;
+  height: 150px;
+  width: 100px;
+    /* flex-grow: 2; This item will take twice as much space */
+    /* background-color: lightcoral; */
+}
+
+.item3 {
+  /* background-color: rgb(149, 193, 3); */
+  color:rgb(149, 193, 3);
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+   height: 100%;
+   border-radius: 5px;
+   /* width: 100%; */
+    /* flex-grow: 2; This item will take twice as much space */
+    /* background-color: lightcoral; */
+}

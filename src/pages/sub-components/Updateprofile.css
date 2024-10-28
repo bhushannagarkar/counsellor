@@ -1,0 +1,110 @@
+/* Main container for the update profile page */
+.update-container {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    /* background-color: #0056b3; */
+  }
+  
+  /* Layout for the grid */
+  .update-grid {
+    display: grid;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  /* Header section */
+  .update-header {
+    text-align: center;
+  }
+  
+  .update-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .update-subtitle {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  /* Flex layout for profile image section */
+  .update-flex-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  /* Profile image section */
+  .update-profile-image-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .update-avatar{
+    height: 300px;
+  }
+  .update-profile-image {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+  }
+  
+  .update-avatar-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Input group styling */
+  .update-input-group {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .update-label {
+    font-weight: bold;
+  }
+  
+  .update-input,
+  .update-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .update-textarea {
+    resize: vertical;
+  }
+  
+  /* Submit button styling */
+  .update-submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(149, 193, 3);
+   
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .update-submit-btn:hover {
+    /* background-color: #0056b3; */
+    background-color: rgb(116,1,116);
+  }
+  
+  .update-submit-btn.loading {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
