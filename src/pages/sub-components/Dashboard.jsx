@@ -19,18 +19,18 @@ import {
 } from "@/components/ui/table";
 import { Tabs, TabsContent } from "@/components/ui/tabs";
 import { clearAllSkillErrors } from "@/store/slices/detailDiagnosisSlice";
-import {
-  clearAllSoftwareAppErrors,
-  deleteSoftwareApplication,
-  getAllSoftwareApplications,
-  resetSoftwareApplicationSlice,
-} from "@/store/slices/softwareApplicationSlice";
+// import {
+//   clearAllSoftwareAppErrors,
+//   deleteSoftwareApplication,
+//   getAllSoftwareApplications,
+//   resetSoftwareApplicationSlice,
+// } from "@/store/slices/softwareApplicationSlice";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import SpecialLoadingButton from "./SpecialLoadingButton";
-import { clearAllTimelineErrors } from "@/store/slices/timelineSlice";
+// import { clearAllTimelineErrors } from "@/store/slices/timelineSlice";
 import { clearAllappointmentsErrors } from "@/store/slices/appointmentSlice";
 import './Dashboard.css'
 import { getdoctor } from "@/store/slices/doctorSlice";

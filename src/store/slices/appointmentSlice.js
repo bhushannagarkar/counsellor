@@ -113,63 +113,63 @@ export const getAllappointments = (doctorObjectId) => async (dispatch) => {
   }
 };
 
-// export const addNewProject = (data) => async (dispatch) => {
-//   dispatch(appointmentsSlice.actions.addNewProjectRequest());
-//   try {
-//     const response = await axios.post(
-//       "https://mern-stack-portfolio-backend-code.onrender.com/api/v1/project/add",
-//       data,
-//       {
-//         withCredentials: true,
-//         headers: { "Content-Type": "multipart/form-data" },
-//       }
-//     );
-//     dispatch(appointmentsSlice.actions.addNewappointmentsuccess(response.data.message));
-//     dispatch(appointmentsSlice.actions.clearAllErrors());
-//   } catch (error) {
-//     dispatch(
-//       appointmentsSlice.actions.addNewProjectFailed(error.response.data.message)
-//     );
-//   }
-// };
-// export const deleteProject = (id) => async (dispatch) => {
-//   dispatch(appointmentsSlice.actions.deleteProjectRequest());
-//   try {
-//     const response = await axios.delete(
-//       `https://mern-stack-portfolio-backend-code.onrender.com/api/v1/project/delete/${id}`,
-//       {
-//         withCredentials: true,
-//       }
-//     );
-//     dispatch(appointmentsSlice.actions.deleteappointmentsuccess(response.data.message));
-//     dispatch(appointmentsSlice.actions.clearAllErrors());
-//   } catch (error) {
-//     dispatch(
-//       appointmentsSlice.actions.deleteProjectFailed(error.response.data.message)
-//     );
-//   }
-// };
+export const addNewProject = (data) => async (dispatch) => {
+  dispatch(appointmentsSlice.actions.addNewProjectRequest());
+  try {
+    const response = await axios.post(
+      "https://mern-stack-portfolio-backend-code.onrender.com/api/v1/project/add",
+      data,
+      {
+        withCredentials: true,
+        headers: { "Content-Type": "multipart/form-data" },
+      }
+    );
+    dispatch(appointmentsSlice.actions.addNewappointmentsuccess(response.data.message));
+    dispatch(appointmentsSlice.actions.clearAllErrors());
+  } catch (error) {
+    dispatch(
+      appointmentsSlice.actions.addNewProjectFailed(error.response.data.message)
+    );
+  }
+};
+export const deleteProject = (id) => async (dispatch) => {
+  dispatch(appointmentsSlice.actions.deleteProjectRequest());
+  try {
+    const response = await axios.delete(
+      `https://mern-stack-portfolio-backend-code.onrender.com/api/v1/project/delete/${id}`,
+      {
+        withCredentials: true,
+      }
+    );
+    dispatch(appointmentsSlice.actions.deleteappointmentsuccess(response.data.message));
+    dispatch(appointmentsSlice.actions.clearAllErrors());
+  } catch (error) {
+    dispatch(
+      appointmentsSlice.actions.deleteProjectFailed(error.response.data.message)
+    );
+  }
+};
 
-// export const updateProject = (id, newData) => async (dispatch) => {
-//   dispatch(appointmentsSlice.actions.updateProjectRequest());
-//   try {
-//     const response = await axios.put(
-//       `https://mern-stack-portfolio-backend-code.onrender.com/api/v1/project/update/${id}`,
-//       newData,
-//       {
-//         withCredentials: true,
-//         headers: { "Content-Type": "multipart/form-data" },
-//       }
-//     );
-//     dispatch(appointmentsSlice.actions.updateappointmentsuccess(response.data.message));
-//     dispatch(appointmentsSlice.actions.clearAllErrors());
-//   } catch (error) {
-//     console.log(error);
-//     dispatch(
-//       appointmentsSlice.actions.updateProjectFailed(error.response.data.message)
-//     );
-//   }
-// };
+export const updateProject = (id, newData) => async (dispatch) => {
+  dispatch(appointmentsSlice.actions.updateProjectRequest());
+  try {
+    const response = await axios.put(
+      `https://mern-stack-portfolio-backend-code.onrender.com/api/v1/project/update/${id}`,
+      newData,
+      {
+        withCredentials: true,
+        headers: { "Content-Type": "multipart/form-data" },
+      }
+    );
+    dispatch(appointmentsSlice.actions.updateappointmentsuccess(response.data.message));
+    dispatch(appointmentsSlice.actions.clearAllErrors());
+  } catch (error) {
+    console.log(error);
+    dispatch(
+      appointmentsSlice.actions.updateProjectFailed(error.response.data.message)
+    );
+  }
+};
 
 export const resetappointmentsSlice = () => (dispatch) => {
   dispatch(appointmentsSlice.actions.resetappointmentsSlice());

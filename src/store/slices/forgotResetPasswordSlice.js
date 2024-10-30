@@ -111,29 +111,29 @@ export const verifyForgotPasswordCode =
   };
 
 // Reset password action
-// export const resetPassword =
-//   (token, password, confirmPassword) => async (dispatch) => {
-//     try {
-//       dispatch(forgotResetPassSlice.actions.resetPasswordRequest());
-//       const response = await axios.put(
-//         `https://mern-stack-portfolio-backend-code.onrender.com/api/v1/doctor/password/reset/${token}`,
-//         { password, confirmPassword },
-//         {
-//           withCredentials: true,
-//           headers: { "Content-Type": "application/json" },
-//         }
-//       );
-//       dispatch(
-//         forgotResetPassSlice.actions.resetPasswordSuccess(response.data.message)
-//       );
-//     } catch (error) {
-//       dispatch(
-//         forgotResetPassSlice.actions.resetPasswordFailed(
-//           error.response?.data?.message || "Error resetting the password!"
-//         )
-//       );
-//     }
-//   };
+export const resetPassword =
+  (token, password, confirmPassword) => async (dispatch) => {
+    try {
+      dispatch(forgotResetPassSlice.actions.resetPasswordRequest());
+      const response = await axios.put(
+        `https://mern-stack-portfolio-backend-code.onrender.com/api/v1/doctor/password/reset/${token}`,
+        { password, confirmPassword },
+        {
+          withCredentials: true,
+          headers: { "Content-Type": "application/json" },
+        }
+      );
+      dispatch(
+        forgotResetPassSlice.actions.resetPasswordSuccess(response.data.message)
+      );
+    } catch (error) {
+      dispatch(
+        forgotResetPassSlice.actions.resetPasswordFailed(
+          error.response?.data?.message || "Error resetting the password!"
+        )
+      );
+    }
+  };
 
 // Clear all errors
 export const clearAllForgotResetPassErrors = () => (dispatch) => {

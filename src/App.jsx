@@ -10,7 +10,7 @@ import UpdateAppointment from "./pages/UpdateAppointment";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import ForgotPassword from "./pages/ForgotPassword";
-import ResetPassword from "./pages/ResetPassword";
+// import ResetPassword from "./pages/ResetPassword";
 import { getdoctor } from "./store/slices/doctorSlice";
 import { getAllonlineTests } from "./store/slices/onlineTestSlice";
 import Navbar from "./pages/Navbar";
@@ -33,7 +33,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/password/forgot" element={<ForgotPassword />} />
-        <Route path="/password/reset/:token" element={<ResetPassword />} />
+     {/*   <Route path="/password/reset/:token" element={<ResetPassword />} />*/}
 
         <Route path="/online/onlinetest/:id" element={<OnlineTestDetails/>} /> 
         <Route path="/update/appointment/:id" element={<UpdateAppointment/>} /> 

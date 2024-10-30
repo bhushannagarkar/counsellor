@@ -1321,7 +1321,7 @@ const UpdateAppoinment = () => {
 
                 {/* all online test added by admin */}
 
-                <label className="FormBodyDiv12-div-label">Client Recomeded tests according to doctor</label>
+                <label className="FormBodyDiv12-div-label">Client Recomeded tests according to Counsellor</label>
                 <div className="FormBodyDiv12-div">
                   {onlineTests.map((test) => (
                     <div key={test._id} className="flex items-center mb-2">

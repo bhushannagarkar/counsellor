@@ -165,26 +165,27 @@ export const logout = () => async (dispatch) => {
   }
 };
 
-// export const updatePassword = (currentPassword, newPassword, confirmNewPassword) => async (dispatch) => {
-//     dispatch(doctorSlice.actions.updatePasswordRequest());
-//     try {
-//       const { data } = await axios.put(
-//         "https://mern-stack-portfolio-backend-code.onrender.com/api/v1/doctor/password/update",
-//         { currentPassword, newPassword, confirmNewPassword },
-//         {
-//           withCredentials: true,
-//           headers: { "Content-Type": "application/json" },
-//         }
-//       );
-//       dispatch(doctorSlice.actions.updatePasswordSuccess(data.message));
-//       dispatch(doctorSlice.actions.clearAllErrors());
-//     } catch (error) {
-//       dispatch(
-//         doctorSlice.actions.updatePasswordFailed(error.response.data.message)
-//       );
-//     }
-//   };
+export const updatePassword = (currentPassword, newPassword, confirmNewPassword) => async (dispatch) => {
+    dispatch(doctorSlice.actions.updatePasswordRequest());
+    try {
+      const { data } = await axios.put(
+        "https://mern-stack-portfolio-backend-code.onrender.com/api/v1/doctor/password/update",
+        { currentPassword, newPassword, confirmNewPassword },
+        {
+          withCredentials: true,
+          headers: { "Content-Type": "application/json" },
+        }
+      );
+      dispatch(doctorSlice.actions.updatePasswordSuccess(data.message));
+      dispatch(doctorSlice.actions.clearAllErrors());
+    } catch (error) {
+      dispatch(
+        doctorSlice.actions.updatePasswordFailed(error.response.data.message)
+      );
+    }
+  };
 
+  
 export const updateProfile = (data) => async (dispatch) => {
   dispatch(doctorSlice.actions.updateProfileRequest());
   try {

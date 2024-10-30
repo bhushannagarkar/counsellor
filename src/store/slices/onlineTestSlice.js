@@ -79,23 +79,23 @@ export const getAllonlineTests  = () => async (dispatch) => {
   }
 };
 
-// export const deleteMessage = (id) => async (dispatch) => {
-//   dispatch(onlineTestsSlice.actions.deleteMessageRequest());
-//   try {
-//     const response = await axios.delete(
-//       `https://mern-stack-portfolio-backend-code.onrender.com/api/v1/message/delete/${id}`,
-//       {
-//         withCredentials: true,
-//       }
-//     );
-//     dispatch(onlineTests lice.actions.deleteonlineTests uccess(response.data.message));
-//     dispatch(onlineTests lice.actions.clearAllErrors());
-//   } catch (error) {
-//     dispatch(
-//       onlineTests lice.actions.deleteMessageFailed(error.response.data.message)
-//     );
-//   }
-// };
+export const deleteMessage = (id) => async (dispatch) => {
+  dispatch(onlineTestsSlice.actions.deleteMessageRequest());
+  try {
+    const response = await axios.delete(
+      `https://mern-stack-portfolio-backend-code.onrender.com/api/v1/message/delete/${id}`,
+      {
+        withCredentials: true,
+      }
+    );
+    dispatch(onlineTestsSlice.actions.deleteonlineTestsuccess(response.data.message));
+    dispatch(onlineTestsSlice.actions.clearAllErrors());
+  } catch (error) {
+    dispatch(
+      onlineTestsSlice.actions.deleteMessageFailed(error.response.data.message)
+    );
+  }
+};
 
 export const clearAllOnlineTestErrors = () => (dispatch) => {
   dispatch(onlineTestsSlice.actions.clearAllErrors());
